@@ -1,0 +1,89 @@
+@charset "UTF-8";
+.gameWindow {
+  position: absolute;
+  margin: 0px;
+  overflow: hidden;
+  /*hide scrollbar*/
+}
+
+.upperzone {
+  width: 800px;
+  height: 150px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+}
+
+.upperzone.portrait {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+}
+
+.upperzone.textzone {
+  position: absolute;
+  width: 600px;
+  height: 150px;
+  left: 200px;
+  top: 0px;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.upperzone.textzone.textbox {
+  color: white;
+  width: 560px;
+  height: 110px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  margin: 0px;
+  padding: 20px;
+}
+
+.downerzone {
+  width: 800px;
+  height: 450px;
+  left: 0px;
+  top: 150px;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+}
+
+.downerzone.textbox {
+  color: white;
+  width: 760px;
+  height: 410px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  margin: 0px;
+  padding: 20px;
+}
+
+.itemList {
+  position: static;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  border: 3px solid;
+  border-color: grey;
+  border-radius: 6px;
+}
+
+/*static:通常の位置つまり勝手に隣にされる relative:staticからの相対位置つまりこれも勝手に(ry
+cssとかいうデフォルトパラメータだらけの言語
+*/
+
+/*# sourceMappingURL=gameWindow.css.map */
