@@ -1,0 +1,83 @@
+$windowWidth:800px;
+$windowHeight:600px;
+$padding:20px;
+@function quarter($param){@return $param/4;}
+@function threeQuarters($param) {@return $param*3/4;}
+
+.gameWindow{
+	position: absolute;
+	margin:0px;
+	overflow: hidden;/*hide scrollbar*/
+}
+.upperzone {
+	width: $windowWidth;
+	height: quarter($windowHeight);
+	left:0px;
+	top:0px;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+}
+.upperzone.portrait{
+	width:quarter($windowWidth);
+	height:quarter($windowHeight);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin:0px;
+}
+.upperzone.textzone {
+	position: absolute;
+	width: threeQuarters($windowWidth);
+	height: quarter($windowHeight);
+	left: quarter($windowWidth);
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+}
+.upperzone.textzone.textbox {
+	color:white;
+	width: threeQuarters($windowWidth)-$padding*2;
+	height: quarter($windowHeight)-$padding*2;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	margin: 0px;
+	padding:$padding;
+}
+.downerzone{
+	width:$windowWidth;
+	height:threeQuarters($windowHeight);
+	left:0px;
+	top:quarter($windowHeight);
+	position: absolute; 
+	margin:0px;
+	padding:0px;
+}
+.downerzone.textbox {
+	color:white;
+	width: ($windowWidth)-$padding*2;
+	height: threeQuarters($windowHeight)-$padding*2;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	margin: 0px;
+	padding: $padding;
+}
+
+.itemList {
+  position: static;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  border: 3px solid;
+  border-color: grey;
+  border-radius: 6px;
+}
+/*static:通常の位置つまり勝手に隣にされる relative:staticからの相対位置つまりこれも勝手に(ry
+cssとかいうデフォルトパラメータだらけの言語*/

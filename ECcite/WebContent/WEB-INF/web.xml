@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<web-app>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>controller.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Detail</servlet-name>
+        <servlet-class>controller.ItemDetailController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Detail</servlet-name>
+        <url-pattern>/Detail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Cart</servlet-name>
+        <servlet-class>controller.CartController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cart</servlet-name>
+        <url-pattern>/Cart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ItemSearchController</servlet-name>
+        <servlet-class>controller.ItemSearchController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ItemSearchController</servlet-name>
+        <url-pattern>/ItemSearchController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateAccount</servlet-name>
+        <servlet-class>controller.CreateAccountController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateAccount</servlet-name>
+        <url-pattern>/CreateAccount</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BuyCompleted</servlet-name>
+        <servlet-class>controller.BuyCompleteController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BuyCompleted</servlet-name>
+        <url-pattern>/BuyCompleted</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>controller.LogoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>MyAccountController</servlet-name>
+        <servlet-class>controller.MyAccountController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyAccountController</servlet-name>
+        <url-pattern>/MyAccountController</url-pattern>
+    </servlet-mapping>
+
+<!-- RPG -->
+    <servlet>
+        <servlet-name>rpg/Login</servlet-name>
+        <servlet-class>rpg.controller.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rpg/Login</servlet-name>
+        <url-pattern>/rpg/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>rpg/Detail</servlet-name>
+        <servlet-class>rpg.controller.ItemDetailController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rpg/Detail</servlet-name>
+        <url-pattern>/rpg/Detail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>rpg/Cart</servlet-name>
+        <servlet-class>rpg.controller.CartController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rpg/Cart</servlet-name>
+        <url-pattern>/rpg/Cart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>rpg/ItemSearchController</servlet-name>
+        <servlet-class>rpg.controller.ItemSearchController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rpg/ItemSearchController</servlet-name>
+        <url-pattern>/rpg/ItemSearchController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>rpg/CreateAccount</servlet-name>
+        <servlet-class>rpg.controller.CreateAccountController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rpg/CreateAccount</servlet-name>
+        <url-pattern>/rpg/CreateAccount</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>rpg/BuyCompleted</servlet-name>
+        <servlet-class>rpg.controller.BuyCompleteController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rpg/BuyCompleted</servlet-name>
+        <url-pattern>/rpg/BuyCompleted</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>rpg/Logout</servlet-name>
+        <servlet-class>rpg.controller.LogoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rpg/Logout</servlet-name>
+        <url-pattern>/rpg/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>rpg/MyAccountController</servlet-name>
+        <servlet-class>rpg.controller.MyAccountController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rpg/MyAccountController</servlet-name>
+        <url-pattern>/rpg/MyAccountController</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>rpg/History</servlet-name>
+        <servlet-class>rpg.controller.HistoryController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>rpg/History</servlet-name>
+        <url-pattern>/rpg/History</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+    	<welcome-file>/rpg/rapper.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
